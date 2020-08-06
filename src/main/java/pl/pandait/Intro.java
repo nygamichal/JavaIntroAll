@@ -1,8 +1,11 @@
 package pl.pandait;
 
+import guru.springframework.norris.chuck.ChuckNorrisQuotes;
+
 public class Intro {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        ChuckNorrisQuotes quotes = new ChuckNorrisQuotes();
+        System.out.println(quotes.getRandomQuote());
     }
 }
